@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'DokGyak',
+  tagline: 'Dokumentáció Docusaurus-szal, gyakorlás.',
+  url: 'http://dokgyak.progtan.hu',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -24,13 +24,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,31 +42,31 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'DokGyak',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'DokGyak logó',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'dok-bev',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Doksik',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
+          //{to: '/blog', label: 'Blog', position: 'left'},
+          /*{
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
-          },
+          },*/
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Doksik',
             items: [
               {
                 label: 'Tutorial',
@@ -76,12 +75,12 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Közösség',
             items: [
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
+              }/*,
               {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
@@ -89,24 +88,24 @@ const config = {
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/docusaurus',
-              },
+              },*/
             ],
           },
           {
-            title: 'More',
+            title: 'Egyebek',
             items: [
               {
                 label: 'Blog',
                 to: '/blog',
-              },
+              }/*,
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
-              },
+              },*/
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © 1995-${new Date().getFullYear()} ProgTanHu Kft.`,
       },
       prism: {
         theme: lightCodeTheme,
