@@ -6,6 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-font-color-base: #555;
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
@@ -14,6 +15,9 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  
+  --kepeja-footer-background : rgb(40, 82, 52);
+  --kepeja-h1-border: var(--ifm-color-primary-lightest);
 }
 
 .docusaurus-highlight-code-line {
@@ -23,6 +27,42 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+html[data-theme='dark'] {
+  --ifm-font-color-base: #bbb;
+  /*background-color: rgba(59, 13, 13, 0.3);*/
+}
+
+html[data-theme='light'] {
+  /*background-color: rgb(243, 225, 206);*/
+}
+
+
+[data-theme='dark'] {
+  --kepeja-footer-background : rgb(13, 58, 13);
+  --kepeja-h1-border: var(--ifm-color-primary-darkest);
+
+}
+
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+/* ------------------------------------------------ */
+.footer {
+  background-color: var(--kepeja-footer-background);
+}
+
+.pagination-nav__label {
+  font-size: 1.3rem;
+  /*color: #fff;*/
+}
+
+.pagination-nav__item {
+  background-color: rgb(228, 181, 202);
+  border-radius: 0.7rem;
+}
+
+h1 {
+  border-bottom: var(--kepeja-h1-border) solid 5px;
+}
+
